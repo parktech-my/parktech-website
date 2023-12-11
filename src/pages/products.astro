@@ -1,0 +1,124 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import ProductCard from "@components/productsCard.astro";
+
+const products = [
+  {
+    name: "Zeag Parking Systems",
+    popular: false,
+    information: [
+      {
+        text: "Entry & Exit Station",
+        link: "/zeag/entryexit.pdf",
+      },
+      {
+        text: "Automatic Payment Station",
+        link: "/zeag/automaticpaystation.pdf",
+      },
+      {
+        text: "Manual Cashier",
+        link: "/zeag/manualcashier.pdf",
+      },
+      {
+        text: "Valimate",
+        link: "/zeag/valimate.pdf",
+      },
+      {
+        text: "Valimark",
+        link: "/zeag/valimark.pdf",
+      },
+      {
+        text: "Valiprint",
+        link: "/zeag/valiprint.pdf",
+      },
+      {
+        text: "Zeag Management Systems",
+        link: "/zeag/ZMS.pdf",
+      },
+    ],
+  },
+  {
+    name: "Magnetic Auto Control Barrier",
+    popular: false,
+    information: [
+      {
+        text: "MIB20",
+        link: "/macb/mib20.pdf",
+      },
+      {
+        text: "MIB 30/MIB 40",
+        link: "/macb/mib30_40.pdf",
+      },
+      {
+        text: "MBE30",
+        link: "/macb/mbe30.pdf",
+      },
+    ],
+  },
+  {
+    name: "Castle Security Systems",
+    popular: false,
+    information: [
+      {
+        text: "Access Control Systems",
+        link: "/zeag/shortlongrangeReader.pdf",
+      },
+    ],
+  },
+  {
+    name: "Nitro Short Range and Long Range System",
+    popular: false,
+    information: [
+      {
+        text: "Long Range Passive RF Access Control Reader",
+        link: "/nitro/NITRONRRFLongRangeReader.pdf",
+      },
+      {
+        text: "Long Range Active RF Access Control Reader",
+        link: "/nitro/NITRONRRFALongRangeReader.pdf",
+      },
+      {
+        text: "Contactless Access Control Reader",
+        link: "/nitro/NITRONRSeriesSmartCardReader.pdf",
+      },
+    ],
+  },
+  {
+    name: "Tiris Long Range Systems",
+    popular: false,
+    information: [
+      {
+        text: "Tiris Long Range Systems",
+        link: "/tiris/TIRISpresentation.pdf",
+      },
+    ],
+  },
+  {
+    name: "Nedap Short Range & Long Range System",
+    popular: false,
+    information: [
+      {
+        text: "Nedap Short Range & Long Range System",
+        link: "/nedap/AVIuPASSA4englishLR.pdf",
+      },
+    ],
+  },
+];
+---
+
+<Layout title="Products">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Products</Fragment>
+      <Fragment slot="desc">
+        Simple & Predictable pricing. No Surprises.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      {products.map((item) => <ProductCard product={item} />)}
+    </div>
+  </Container>
+</Layout>
