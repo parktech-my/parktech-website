@@ -1,0 +1,99 @@
+---
+// @ts-ignore
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon";
+
+import zeagImage from "../assets/zeag.jpg";
+import tirisImage from "../assets/tiris.jpg";
+import macImage from "../assets/mac.jpg";
+import nitroImage from "../assets/nitro.jpg";
+import nedapImage from "../assets/nedap.jpg";
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Business Partners
+  </h2>
+  <!-- <p class="text-lg mt-4 text-slate-600">
+    Astro comes batteries included. It takes the best parts of state-of-the-art
+    tools and adds its own innovations.
+  </p> -->
+
+  <div class="relative flex flex-nowrap overflow-x-hidden">
+    <div class="py-12 animate-marquee flex flex-nowrap">
+      <Image
+        src={zeagImage}
+        alt="ZEAG"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={tirisImage}
+        alt="TIRIS"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={macImage}
+        alt="MAC"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={nitroImage}
+        alt="NITRO"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={nedapImage}
+        alt="NEDAP"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+    </div>
+
+    <div class="absolute top-0 py-12 animate-marquee2 flex flex-nowrap">
+      <Image
+        src={zeagImage}
+        alt="ZEAG"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={tirisImage}
+        alt="TIRIS"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={macImage}
+        alt="MAC"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={nitroImage}
+        alt="NITRO"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={nedapImage}
+        alt="NEDAP"
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+    </div>
+  </div>
+</div>
