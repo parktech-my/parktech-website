@@ -43,10 +43,11 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
+        <a href="/">
+          <span class="text-2xl font-bold text-blue-400">PARK</span><span
+            class="text-2xl font-bold text-orange-500">TECH</span
           >
+          <br /><span class="font-bold text-black">SYSTEMS</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -58,7 +59,7 @@ const menuitems = [
             menuitems.map(
               (
                 item,
-                index
+                index,
                 /**
                  * ! Comment out the boilerplate codes.
                  * */
@@ -103,7 +104,7 @@ const menuitems = [
                     )}*/}
                   </a>
                 </li>
-              )
+              ),
             )
           }
         </ul>
