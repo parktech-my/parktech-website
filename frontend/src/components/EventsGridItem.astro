@@ -1,0 +1,33 @@
+---
+// EventsGridItem.astro
+const { event } = Astro.props;
+const url = import.meta.env.STRAPI_URL;
+
+// Assuming event.attributes.image is an array of images
+const images = event.attributes?.image?.data || [];
+---
+
+<div
+  class="rounded-md overflow-hidden shadow-sm p-4 transition-transform h-auto">
+  {
+    images.length > 0 ? (
+      images.map((img, index) => (
+        <div class="rounded-md h-48 w-full overflow-hidden">
+          <img
+            class="object-cover w-full h-full"
+            src={url + img.attributes.url}
+            alt={img.alternativeText || `Event image ${index + 1}`}
+          />
+        </div>
+      ))
+    ) : (
+      <div class="rounded-md h-48 w-full overflow-hidden">
+        <img
+          class="object-cover w-full h-full"
+          src="https://via.placeholder.com/1080"
+          alt="Placeholder"
+        />
+      </div>
+    )
+  }
+</div>
