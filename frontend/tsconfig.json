@@ -2,7 +2,7 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "strictNullChecks": true,
-    "baseUrl": "D:/Projects/WebDev/ParkTech/parktech-website/src",
+    "baseUrl": "D:/Projects/WebDev/ParkTech/parktech-website/frontend/src",
     "paths": {
       "@lib/*": [
         "lib/*"

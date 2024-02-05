@@ -1,0 +1,12 @@
+---
+import EventGridItem from "./EventsGridItem.astro";
+const { events } = Astro.props;
+---
+
+<div class="grid grid-cols-3 gap-6">
+  {
+    events.data && events.data.length > 0
+      ? events.data.map((event) => <EventGridItem event={event} />)
+      : "No posts founds"
+  }
+</div>
