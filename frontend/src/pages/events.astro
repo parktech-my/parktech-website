@@ -10,17 +10,14 @@ let url = import.meta.env.STRAPI_URL + "/api/events?populate=image";
 const events = await fetch(url).then((response) => response.json());
 ---
 
-<Layout title="Company Profile">
+<Layout title="Events">
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">Company Profile</Fragment>
-      <Fragment slot="desc">Parktech Systems</Fragment> -->
-    </Sectionhead>
+    <!-- <Sectionhead>
+      <Fragment slot="title">Events</Fragment>
+      <Fragment slot="desc">Parktech Systems</Fragment>
+    </Sectionhead> -->
 
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-blue-600">
-        Welcome to Parktech Systems
-      </h2>
+    <div class="flex flex-col gap-3 max-w-4xl mt-16">
       <div class="leading-relaxed text-slate-500">
         <EventsGrid events={events} < div />
       </div>
