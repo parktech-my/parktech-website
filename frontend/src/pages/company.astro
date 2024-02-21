@@ -20,7 +20,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-blue-600">
-        Welcome to Parktech Systems
+        Welcome to Parktech
       </h2>
       <div class="leading-relaxed text-slate-500">
         <b>Parktech Systems Sdn Bhd (Parktech)</b> offers <u
@@ -51,20 +51,18 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             The Carpark Revenue Control Systems
           </p>
           <li>
-            Basic entry ticketing equipment installed at the incoming lane with
-            exit manual cashiering up
+           Entry and Exit Lane with Credit card reader or Touch N Go card reader installed or combination with LPRS.
+           Customers may choose to prepaid with QR code or proprietor app for quick exit.
+           Alternatively, customer can also pay at the exit lane.            
           </li>
           <li>
-            A full range of automated payment station. The stations could be
-            used to accept parking ticket payment from more than a single car
-            park systems hence savings on resources.
+          Validators are available to handle special parking concessions.
+            
           </li>
           <br />
            The parking systems can be installed at small to large car parks and
           its applications are suitable for hospital, cinemas, hotels, shopping
-          mall, office building etc. The systems are modular and scalable
-          without having to change the initial equipment hence prolonging the
-          equipment lifecycle.
+          mall, office building etc. 
         </Container>
       </div>
     </div>
@@ -73,7 +71,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
        * ! Removed the company members details
        * */
     }
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <!-- <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -86,7 +84,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           </div>
         ))
       }
-      <!-- <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+      <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -113,7 +111,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           </div>
         ))
       }
+    </div> 
     </div> -->
-    </div>
   </Container>
 </Layout>
