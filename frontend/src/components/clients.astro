@@ -5,6 +5,7 @@ import { Icon } from "astro-icon";
 
 import gentingImage from "../assets/genting.png";
 import skyworldImage from "../assets/skyworld.jpg";
+import timesImage from "../assets/times.jpg";
 ---
 
 <div class="mt-24">
@@ -14,19 +15,25 @@ import skyworldImage from "../assets/skyworld.jpg";
     tools and adds its own innovations.
   </p> -->
 
-  <div class="relative flex flex-nowrap overflow-x-hidden">
+  <!-- <div class="relative flex flex-nowrap overflow-x-hidden">
     <div class="py-5 animate-marquee flex flex-nowrap">
       <Image
         src={gentingImage}
-        alt="ZEAG"
+        alt="Genting"
         loading="eager"
         format="avif"
         class="mx-20"
       />
       <Image
         src={skyworldImage}
-        alt="TIRIS"
-        width={300}
+        alt="Skyworld" 
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+      <Image
+        src={timesImage}
+        alt="TIMES" 
         loading="eager"
         format="avif"
         class="mx-20"
@@ -36,19 +43,39 @@ import skyworldImage from "../assets/skyworld.jpg";
     <div class="absolute top-0 py-5 animate-marquee2 flex flex-nowrap">
       <Image
         src={gentingImage}
-        alt="ZEAG"
+        alt="Genting"
         loading="eager"
         format="avif"
         class="mx-20"
       />
       <Image
         src={skyworldImage}
-        alt="TIRIS"
-        width={300}
+        alt="Skyworld" 
         loading="eager"
         format="avif"
         class="mx-20"
       />
+      <Image
+        src={timesImage}
+        alt="TIMES" 
+        loading="eager"
+        format="avif"
+        class="mx-20"
+      />
+    </div>
+  </div> -->
+
+  <div class="relative flex overflow-x-hidden">
+    <div class="py-12 animate-marquee flex whitespace-nowrap">
+      <span class="mx-5"><img width="100px" src="../src/assets/genting.png"></span>
+      <span class="mx-5"><img width="100px" src="../src/assets/skyworld.jpg"></span>
+      <span class="mx-5"><img width="100px" src="../src/assets/times.jpg" ></span>
+    </div>
+  
+    <div class="absolute top-0 py-12 animate-marquee2 flex whitespace-nowrap">
+      <span class="mx-5"><img src="../src/assets/genting.png"></span>
+      <span class="mx-5"><img src="../src/assets/skyworld.jpg"></span>
+      <span class="mx-5"><img src="../src/assets/times.jpg"></span>
     </div>
   </div>
 </div>
