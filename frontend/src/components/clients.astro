@@ -1,8 +1,5 @@
 ---
 // @ts-ignore
-import { Image } from "astro:assets";
-import { Icon } from "astro-icon";
-
 import gentingImage from "../assets/genting.png";
 import skyworldImage from "../assets/skyworld.jpg";
 import timesImage from "../assets/times.jpg";
@@ -13,15 +10,27 @@ import timesImage from "../assets/times.jpg";
 
   <div class="relative flex overflow-x-hidden">
     <div class="py-12 animate-marquee flex whitespace-nowrap">
-      <span class="mx-5"><img width="100%" src={gentingImage.src} alt="Genting"></span>
-      <span class="mx-5"><img width="100%" src={skyworldImage.src} alt="Skyworld"></span>
-      <span class="mx-5"><img width="100%" src={timesImage.src} alt="Times24"></span>
+      <span class="mx-5"
+        ><img width="100%" src={gentingImage.src} alt="Genting" /></span
+      >
+      <span class="mx-5"
+        ><img width="100%" src={skyworldImage.src} alt="Skyworld" /></span
+      >
+      <span class="mx-5"
+        ><img width="100%" src={timesImage.src} alt="Times24" /></span
+      >
     </div>
-  
+
     <div class="absolute top-0 py-12 animate-marquee2 flex whitespace-nowrap">
-      <span class="mx-5"><img width="100%" src={gentingImage.src} alt="Genting"></span>
-      <span class="mx-5"><img width="100%" src={skyworldImage.src} alt="Skyworld"></span>
-      <span class="mx-5"><img width="100%" src={timesImage.src} alt="Times24"></span>
+      <span class="mx-5"
+        ><img width="100%" src={gentingImage.src} alt="Genting" /></span
+      >
+      <span class="mx-5"
+        ><img width="100%" src={skyworldImage.src} alt="Skyworld" /></span
+      >
+      <span class="mx-5"
+        ><img width="100%" src={timesImage.src} alt="Times24" /></span
+      >
     </div>
   </div>
 </div>

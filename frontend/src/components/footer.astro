@@ -1,11 +1,41 @@
 ---
-import Container from "@components/container.astro";
+import { Image } from "astro:assets";
 ---
 
-<Container>
-  <footer class="bottom-0 mt-40 left-0 right-0 mx-auto">
-    <p class="text-center text-sm text-slate-500">
-      Copyright © {new Date().getFullYear()} Parktech Systems. All rights reserved.
-    </p>
-  </footer>
-</Container>
+<footer>
+  <hr
+    class="w-96 h-1 mx-auto mt-10 bg-gray-100 border-0 rounded md:mt-40 dark:bg-gray-700"
+  />
+  <div
+    class="px-3 my-16 lg:px-28 bottom-0 left-0 right-0 flex flex-row justify-between">
+    <div>
+      <a href="/">
+        <span class="text-2xl font-bold text-blue-400">PARK</span><span
+          class="text-2xl font-bold text-orange-500">TECH</span
+        ><br />
+        <span class="font-bold">SYSTEMS</span>
+      </a>
+      <div class="my-3">
+        <p class="text-sm text-slate-500">
+          Copyright © {new Date().getFullYear()} Parktech Systems.<br />
+        </p>
+        <p class="text-sm text-slate-500">All rights reserved.</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-1">
+      <h2 class="font-bold">Links</h2>
+      <a href="/company"><span>About Us</span></a>
+      <a href="/references"><span>References</span></a>
+      <a href="/products"><span>Products</span></a>
+    </div>
+    <div class="flex flex-col gap-1">
+      <h2 class="font-bold">Legal</h2>
+      <a href="/privacy-policy"><span>Privacy Policy</span></a>
+      <a href="/terms-conditions"><span>Terms and Conditions</span></a>
+    </div>
+    <div class="flex flex-col gap-1">
+      <h2 class="font-bold">Help Me</h2>
+      <a href="/contact"><span>Contact Us</span></a>
+    </div>
+  </div>
+</footer>
